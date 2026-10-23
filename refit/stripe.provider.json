@@ -1,0 +1,35 @@
+{
+  "id": "stripe-full",
+  "packageName": "stripe",
+  "defaultImport": true,
+  "namedExport": "Stripe",
+  "constructorCalls": true,
+  "apiVersion": {
+    "constructorArgument": 1,
+    "property": "apiVersion",
+    "requestArguments": [
+      1,
+      2
+    ]
+  },
+  "operations": [
+    {
+      "resource": "customers",
+      "method": "update",
+      "schema": "customer",
+      "operationId": "PostCustomersCustomer"
+    },
+    {
+      "resource": "paymentIntents",
+      "method": "create",
+      "schema": "payment_intent",
+      "operationId": "PostPaymentIntents"
+    },
+    {
+      "resource": "paymentMethods",
+      "method": "attach",
+      "schema": "payment_method",
+      "operationId": "PostPaymentMethodsPaymentMethodAttach"
+    }
+  ]
+}
